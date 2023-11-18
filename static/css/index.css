@@ -1,0 +1,9 @@
+.navbar {
+    box-shadow: 0 0 5px cyan, /* Add a subtle shadow */
+    0 0 25px cyan;
+}
+.navbar:hover {
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan;
+    background: linear-gradient(var(--x),#00ccff,#0e1538,#d400d4);
+}

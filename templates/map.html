@@ -1,0 +1,69 @@
+{% extends 'partials/base.html' %}
+
+{% block content %}
+
+<div class="container-fluid pt-3">
+	<div class="row">
+		<div class="col-md-4">
+			<h2 style="text-align: center;">NDVI CHANGE</h2>
+			<div id="map-container1">{{world_map | safe}}</div>
+			
+
+		</div>
+		<div class="col-md-4">
+			<h2 style="text-align: center;">LULC CHANGE</h2>
+			<!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content" style=" margin-left: -1086px;margin-top: 275px;width:1185px">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ABOUT</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="buta">
+                      <div class="modal-body">
+                        <div class="fontain">
+                            <div class="box">
+                                <h2>SERVICE</h2>
+                                <h3>Change Detection Dashboard</h3>
+                                <p>This cutting-edge NDVI, Land Use Land Cover, and Land Surface Temperature Change Detection Dashboard—a transformative tool designed to unravel the complexities of our changing environment. Monitoring our environment is not just a responsibility; it's a catalyst for positive change. This dashboard is a testament to my commitment to providing you with the tools needed to make a lasting impact on the world around us.</p>    
+                            </div>
+                            <div class="box">
+                                <h2>DEVELOPER</h2>
+                                <h3>Ahado Kwame Jesse</h3>
+                                <p><span style="font-weight: bold;">INSTITUTION : </span>Kwame Nkrumah University of Science and Technology</p>
+                                <p><span style="font-weight: bold;">POSITION : </span>Teaching and Research Assistant</p>
+                                <p><span style="font-weight: bold;">DEPARTMENT : </span>Geomatic engineering</p>
+                                <p><span style="font-weight: bold;">EMAIL : </span>jessedabankah@gmail.com</p>
+                                <p><span style="font-weight: bold;">PHONE : </span>+233504116594</p>    
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer" style="background-color: #c98d51;">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+			<div id="map-container2">{{world_map2 | safe}}</div>
+			
+		</div>
+		<div class="col-md-4">
+			<h2 style="text-align: center;">LST CHANGE</h2>
+			<div id="map-container3">{{world_map3 | safe}}</div>
+			
+		</div>
+		<div class="col-md-6" id="chart-container">
+			<div id="container"></div>
+
+		</div>
+		<div class="col-md-6" id="chart-container">
+			<div id="container2"></div>
+		</div>
+	</div>
+</div>
+{% endblock %}
