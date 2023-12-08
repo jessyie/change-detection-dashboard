@@ -26,9 +26,9 @@
 .fontain .box
 {
    position: relative;
-   width: 320px;
+   width: 100%;
    background: #fff;
-   padding: 100px 40px 60px;
+   padding: 41px 40px 60px;
    box-shadow: 0 15px 45px rgba(0, 0, 0, .1); 
 }
 .fontain .box:before
@@ -54,7 +54,7 @@
 {
     position: absolute;
     left: 40px;
-    top: 60px;
+    top: 10px;
     font-size: 2.5em;
     font-weight: 800;
     z-index: 1;
@@ -83,8 +83,246 @@
    color: #555;
    transition: 0.5s; 
 }
+.fontain .box ul
+{
+   position: relative;
+   z-index: 2;
+   color: darkblue;
+   transition: 0.5s; 
+}
 .fontain .box:hover h3,
 .fontain .box:hover p
 {
     color: #fff;
+}
+.fontain .box h3 span
+{
+    position: relative;
+    z-index: 2;
+    
+}
+.fontain .box:hover h3 span
+{
+    color: darkblue;
+}
+.fontain .box:hover ul
+{
+    color: black;
+}
+#navi {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 7px;
+}
+.title1 {
+    font-size: 45px;
+}
+.title2 {
+    font-size: 25px;
+    font-style: italic;
+}
+#yearSelection {
+    border-style: solid;
+    border-radius: 3px;
+    padding: 6px;
+    font-size: 16px;
+    margin-right: 100px
+}
+#btn1 {
+    font-size: 10px;
+    margin-right: 80px;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: #445063;
+    border-width: 1px;
+    padding: 8px
+}
+#md1 {
+    margin-left: -1086px;
+    margin-top: 275px;
+    width:1185px
+}
+.pp1 {
+    font-size: x-small;
+}
+
+@media screen and (max-width: 600px)
+{
+    #bar1 {
+        min-height: 2vh;
+    }
+    #bar2 {
+        height: 3vh;
+    }
+    #navi {
+        margin-left: 18vw;
+        margin-top: -6.5vh;
+    }
+    .navi2 {
+        margin-top: 3vh;
+    }
+    .title1 {
+        font-size: 3.7vw;
+    }
+    .title2 {
+        display: none;
+    }
+    #yearSelection {
+        font-size: 1vw;
+        margin-left: 4vw;
+        margin-top: -4vh;
+        
+    }
+    #btn1 {
+        font-size: 1vw;
+        margin-right: 4vw;
+        margin-top: -3vh;
+        
+    }
+    .dive {
+        display: none;
+    }
+    #md1 {
+    margin-left: -1vw;
+    margin-top: 66vh;
+    width:96vw;
+    }
+    .pp1 {
+        font-size: xx-small;
+    }
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    #bar1 {
+        
+    }
+    #bar2 {
+        
+    }
+    #navi {
+        margin-left: -1vw;
+        
+    }
+    .navi2 {
+        margin-top: 1vh;
+    }
+    .title1 {
+        font-size: 4vw;
+    }
+    .title2 {
+        display: none;
+    }
+    #yearSelection {
+        font-size: 2.3vw;
+        margin-left: 1vw;
+        
+        
+    }
+    #btn1 {
+        font-size: 1.3vw;
+        margin-left: -9vw;
+        margin-right: -3vw;
+        
+        
+    }
+    .dive {
+        display: none;
+    }
+    #md1 {
+    margin-left: -43vw;
+    margin-top: 37vh;
+    width: 44vw;
+    }
+    .pp1 {
+        font-size: xx-small;
+    }
+    #c1 {
+        width: 49vw;
+    }
+    #c2 {
+        margin-top: 27vh;
+        height: 48vh;
+        width: 57vw;
+        margin-left: -27vw;
+    }
+    #c3 {
+        margin-top: -75vh;
+        margin-left: 52vw;
+        width: 49vw;
+    }
+    #chart-container1 {
+        margin-top: -16vh;
+        width: 51vw;
+        height: 32vh;
+    }
+    #chart-container2 {
+        margin-top: -32vh;
+        margin-left: 51vw;
+    }
+}
+@media screen and (min-width: 900px) {
+    #bar1 {
+       width: 100vw;
+       min-height: 2vh; 
+    }
+    #bar2 {
+        height: 4vh;
+    }
+    #navi {
+        margin-left: -1vw;
+        
+    }
+    .navi2 {
+        font-size: 1vw;
+    }
+    .title1 {
+        font-size: 1.8vw;
+    }
+    .title2 {
+        font-size: 0.8vw;
+
+    }
+    #yearSelection {
+        font-size: 1vw;
+        margin-right: 10vw;
+        margin-left: 2vw;
+        
+        
+    }
+    #btn1 {
+        font-size: 0.4vw;
+        margin-left: -7vw;
+        margin-right: 0vw;
+        
+        
+    }
+    .dive {
+        font-size: 1.4vw;
+        margin: 1vw;
+    }
+    #md1 {
+    margin-left: -51vw;
+    margin-top: 37vh;
+    width: 44vw;
+    }
+    .pp1 {
+        font-size: xx-small;
+    }
+    /*#c1 {
+        width: 33vw;
+    }
+    #map-container1 {
+        height: 68vh;
+    }
+    #c2 {
+        
+    }
+    #c3 {
+        
+    }
+    #chart-container1 {
+        
+    }
+    #chart-container2 {
+        
+    }*/
 }

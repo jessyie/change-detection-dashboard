@@ -29,16 +29,14 @@
 	
 </head>
 <body>
-	<nav class="navbar navbar-expand-md navbar-dark bg-secondary fixed-top">
-		<div class="container-fluid">
+	<nav class="navbar navbar-expand-md navbar-dark bg-secondary fixed-top" id="bar1">
+		<div class="container-fluid" id="bar2">
 
-			<a class="navbar-brand item2" href="#"
-			style="padding-left: 10px; padding-right: 10px; margin-left: 7px;">
-			<h1><span style="font-size: 45px;">CHANGE DETECTION DASHBOARD</span> | <span style="font-size: 25px; font-style: italic;">Northern Region of Ghana</span></h1>
+			<a class="navbar-brand item2" href="#" id="navi">
+			<h1 class="navi2"><span class="title1">CHANGE DETECTION DASHBOARD</span><span class="dive">|</span><span class="title2">Northern Region of Ghana</span></h1>
 			</a>
 
-			<select id='yearSelection' onchange="changeChartYear()" class=btn-dark
-			style="border-style: solid; border-radius: 3px; padding: 6px; font-size: 16px; margin-right: 100px">
+			<select id='yearSelection' onchange="changeChartYear()" class=btn-dark>
 				<option selected value="">YEARS</option>
 				<option value='2019'>2019</option>
 				<option value="2020">2020</option>
@@ -46,7 +44,7 @@
 	
 			</select>
             <div>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="font-size: 10px; margin-right: 80px; border-style: solid; border-radius: 20px; background-color: #445063; border-width: 1px; padding: 8px">
+                <button id="btn1" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                   ABOUT
               </button>
           </div>

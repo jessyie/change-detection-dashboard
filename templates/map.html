@@ -4,20 +4,20 @@
 
 <div class="container-fluid pt-3">
 	<div class="row">
-		<div class="col-md-4">
+		<div class="col-md-4" id="c1">
 			<h2 style="text-align: center;">NDVI CHANGE</h2>
 			<div id="map-container1">{{world_map | safe}}</div>
 			
 
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-4" id="c2">
 			<h2 style="text-align: center;">LULC CHANGE</h2>
 			<!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog" role="document">
-                <div class="modal-content" style=" margin-left: -1086px;margin-top: 275px;width:1185px">
+                <div class="modal-content" id="md1">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">ABOUT</h5>
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -26,42 +26,33 @@
                       <div class="modal-body">
                         <div class="fontain">
                             <div class="box">
-                                <h2>SERVICE</h2>
-                                <h3>Change Detection Dashboard</h3>
-                                <p>This cutting-edge NDVI, Land Use Land Cover, and Land Surface Temperature Change Detection Dashboard—a transformative tool designed to unravel the complexities of our changing environment. Monitoring our environment is not just a responsibility; it's a catalyst for positive change. This dashboard is a testament to my commitment to providing you with the tools needed to make a lasting impact on the world around us.</p>    
-                            </div>
-                            <div class="box">
-                                <h2>DEVELOPER</h2>
-                                <h3>Ahado Kwame Jesse</h3>
-                                <p><span style="font-weight: bold;">INSTITUTION : </span>Kwame Nkrumah University of Science and Technology</p>
-                                <p><span style="font-weight: bold;">POSITION : </span>Teaching and Research Assistant</p>
-                                <p><span style="font-weight: bold;">DEPARTMENT : </span>Geomatic engineering</p>
-                                <p><span style="font-weight: bold;">EMAIL : </span>jessedabankah@gmail.com</p>
-                                <p><span style="font-weight: bold;">PHONE : </span>+233504116594</p>    
-                            </div>
+
+                              <p class="pp1"><span style="font-weight: bold;">Change Detection Dashboard</span><br>This cutting-edge NDVI, Land Use Land Cover, and Land Surface Temperature Change Detection Dashboard—a transformative tool designed to unravel the complexities of our changing environment. Monitoring our environment is not just a responsibility; it's a catalyst for positive change. This dashboard is a testament to my commitment to providing you with the tools needed to make a lasting impact on the world around us.</p>
+                              <p class="pp1"><span style="font-weight: bold;">DEVELOPER</span><br>
+                                <ul class="pp1" style="color: black;">* Ahado Kwame Jesse [jessedabankah@gmail.com]</ul>
+                              </p>
+                              <p class="pp1"><span style="font-weight: bold;">DISCLAIMER</span><br>The information provided by us on this Website is for general information purposes only. All information on this website is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, validity, reliability, availability or completeness of any information on this website. This Website is solely for informational purposes and does not represent a contract. Any liabilities or warranties are thus excluded on the part of any contractual party named on this Website and/or any employees or bodies thereof. No liability or warranty will be assumed related to the future fulfillment or non-fulfillment of specific occurrences, expectations, assumptions, etc. The entire risk as to the quality and performance of this Website is with You. Should any service or content prove defective in any respect, You (not any Contributor) assume the cost of any necessary servicing, repair, or correction. Your access to and use of the Services or any Content is at your own risk. You understand and agree that the Services and Content are provided to you on an ‘as is’ and ‘as available’ basis. Without limiting the foregoing, to the full extent permitted by law, this Website disclaims all warranties, express or implied, of merchantability, fitness for a particular purpose, or non-infringement.<br>© 2023 Change Detection Dashboard – Northern Region, Ghana</p>
+                            </div>    
+                          </div>
                         </div>
                     </div>
                   </div>
-                  <div class="modal-footer" style="background-color: #c98d51;">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    
-                  </div>
-                </div>
+
               </div>
             </div>
 			<div id="map-container2">{{world_map2 | safe}}</div>
 			
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-4" id="c3">
 			<h2 style="text-align: center;">LST CHANGE</h2>
 			<div id="map-container3">{{world_map3 | safe}}</div>
 			
 		</div>
-		<div class="col-md-6" id="chart-container">
+		<div class="col-md-6" id="chart-container1">
 			<div id="container"></div>
 
 		</div>
-		<div class="col-md-6" id="chart-container">
+		<div class="col-md-6" id="chart-container2">
 			<div id="container2"></div>
 		</div>
 	</div>
